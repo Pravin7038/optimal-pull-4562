@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import ProductSlider from "../components/ProductSlider"
 import BannerSlider from "../components/BannerSlider"
 import styles from "./Mystyle.module.css"
+
 const Home = () => {
 
     return (

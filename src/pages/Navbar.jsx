@@ -25,13 +25,13 @@ const Navbar = () => {
         <Container >
             {<Box fontFamily="font-family: Roboto,Arial,sans-serif" fontSize="15px" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" paddingBottom="3px" textColor="#020202">
                 <Box backgroundColor="#f5f5f5" >
-                    <HStack margin="10px" marginLeft="10%" width="100%">
+                    <HStack margin="10px" marginLeft="8%" width="100%">
                         <Link to="/">
-                            <Image boxSize='60px'
-                                objectFit='cover' src='https://cdn.worldvectorlogo.com/logos/insite-vision.svg' alt="err" ></Image>
+                            <Image width="140px" height="20px"
+                                objectFit='cover' src="https://i.ibb.co/khYfCCK/Fashion-Wear-1.png" alt="err" ></Image>
                         </Link>
                         <Input variant='outline' border="1px solid black" borderRadius={4} placeholder='What can we help you find?' paddingLeft="10px" height="50px" width="50%" position="relative" />
-                        <SearchIcon w="23px" h="23px" position="absolute" left="61.5%" color="#37474F" />
+                        <SearchIcon w="23px" h="23px" position="absolute" left="65%" color="#37474F" />
                         <Divider orientation='vertical' />
                         <Flex justifyContent="space-around" width="25%">
                             <Center flexDirection="column" > <GiWantedReward size="30px" />Rewards</Center>
@@ -44,7 +44,7 @@ const Navbar = () => {
                     </HStack>
                 </Box>
 
-                <HStack margin="15px" marginLeft="10%" justifyContent="space-between" width="55%" position="relative" >
+                <HStack margin="15px" marginLeft="8%" justifyContent="space-between" width="55%" position="relative" >
                     <Link to="/gifts" onMouseEnter={() => setGiftState(true)} onMouseLeave={() => setGiftState(false)} transition="1s">
                         Gifts
                     </Link>

@@ -91,7 +91,7 @@ const ProductCard = ({ product }) => {
         <Image width="100%" height="300px"  src={`${product.image}`}></Image>
       </Box>
       <Box p="4">
-        <Text fontSize="15px" fontWeight="bold" mb="2" textAlign="left">{product.name}</Text>
+        <Text fontSize="15px" mb="2" textAlign="left">{product.name}</Text>
         <Text textAlign="left" fontWeight="bold" color="red">${product.price.toFixed(2)}</Text>
       </Box>
     </Box>

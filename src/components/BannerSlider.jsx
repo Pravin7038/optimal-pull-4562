@@ -11,28 +11,22 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 const products = [
   {
-    id: 1,
-    name: "Modern. Southern. Home.™ Heated Mircroplush Throw Blanket",
     image: "https://belk.scene7.com/is/image/Belk/wk09_032723_hp_rl_fh1_carl?$DWP_PHOTO$",
-    price: 130.00,
   },
   {
-    id: 2,
-    name: "Crown & Ivy™ Women's Balloon Sleeve Printed Shirtdress",
+ 
     image: "https://belk.scene7.com/is/image/Belk/wk09_032723_hp_rl_fh2_carl?$DWP_PHOTO$",
-    price: 12.99,
+
   },
   {
-    id: 3,
-    name: "Crown & Ivy™ Women's Puff Sleeve Ruffled V-Neck Midi Dress",
+
     image: "https://belk.scene7.com/is/image/Belk/wk09_032723_hp_rl_fh3_carl?$DWP_PHOTO$",
-    price: 39.99,
+  
   },
   {
-    id: 4,
-    name: "Belk & Co 1/2 Ct. T.w. Round Cut Diamond Stud Earrings In 14K White Gold",
+
     image: "https://belk.scene7.com/is/image/Belk/wk09_032723_hp_rl_fh4_carl?$DWP_PHOTO$",
-    price: 767.99,
+
   },
 ];
 

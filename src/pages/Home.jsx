@@ -1,7 +1,8 @@
-import { Box, Image, SimpleGrid } from "@chakra-ui/react"
+import { Box, Heading, Image, SimpleGrid,Flex } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
 import ProductSlider from "../components/ProductSlider"
 import BannerSlider from "../components/BannerSlider"
+import styles from "./Mystyle.module.css"
 const Home = () => {
 
     return (
@@ -17,7 +18,7 @@ const Home = () => {
             {/* <Box margin="auto" width="80%" marginTop="20px">
                 <Image width="100%" src="https://belk.scene7.com/is/image/Belk/wk09_032723_hp_rl_fh4_carl?$DWP_PHOTO$"></Image>
             </Box> */}
-            {<BannerSlider/>}
+            {<BannerSlider />}
             <Box margin="auto" width="80%" marginTop="20px">
                 <Link>
                     <Image width="100%" src="https://belk.scene7.com/is/image/Belk/wk09_032723_hp_fh1?$DWP_PHOTO$"></Image>
@@ -163,16 +164,19 @@ const Home = () => {
             </Box>
             <Box margin="auto" width="80%" marginTop="20px">
                 <SimpleGrid columns="4" width="100%">
-                    <Link><Image  src="https://belk.scene7.com/is/image/Belk/wk03_2022_services_4c_1?$DWP_PHOTO$"></Image></Link>
+                    <Link><Image src="https://belk.scene7.com/is/image/Belk/wk03_2022_services_4c_1?$DWP_PHOTO$"></Image></Link>
                     <Link><Image src="https://belk.scene7.com/is/image/Belk/wk03_2022_services_4c_2?$DWP_PHOTO$"></Image></Link>
                     <Link><Image src="https://belk.scene7.com/is/image/Belk/wk03_2022_services_4c_3?$DWP_PHOTO$"></Image></Link>
                     <Link><Image src="https://belk.scene7.com/is/image/Belk/wk03_2022_services_4c_4?$DWP_PHOTO$"></Image></Link>
 
                 </SimpleGrid>
             </Box>
-            <Box>
+            <Box marginTop="30px" textAlign = "left" width="80%" marginLeft="10%">
+                <Heading borderBottom="1px solid #a5a19d" fontSize="22px" className={styles.fontstyle}>Just for You</Heading>
+            </Box>
+            <Box textAlign="left" position="relative">
                 {/* //Just for you */}
-                {<ProductSlider/>}
+                {<ProductSlider />}
             </Box>
         </Box>
 

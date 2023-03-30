@@ -6,7 +6,7 @@ const Footer = () => {
 
     return (
         <>
-            <Flex backgroundColor="black" height="1px" marginBottom="2%" width="100%" marginTop="2%"></Flex>
+            <Flex backgroundColor="#a5a19d" height="1px" marginBottom="2%" width="100%" marginTop="2%"></Flex>
             <Container width="90%" margin="auto" fontFamily="font-family: Roboto,Arial,sans-serif" color="#020202" marginTop="3%">
 
                 <Flex margin="15px" marginLeft="13%" justifyContent="space-between" width="80%" >
@@ -101,7 +101,7 @@ const Footer = () => {
                     </Flex>
                 </Flex>
             </Container>
-            <Flex backgroundColor="black" height="1px" marginBottom="2%" width="100%" ></Flex>
+            <Flex backgroundColor="#a5a19d" height="1px" marginBottom="2%" width="100%" ></Flex>
         </>
 
     )

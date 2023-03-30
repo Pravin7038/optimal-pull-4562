@@ -1,12 +1,13 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/Home'
+import ProductsPage from "../pages/ProductsPage"
 export default function AllRoutes() {
     return (
         <Routes>
             <Route path='/' element={<Home />}></Route>
-            <Route path='/gifts' element={<Home />}></Route>
-            <Route path='/women' element={<Home />}></Route>
+            <Route path='/:section' element={<ProductsPage />}></Route>
+            {/* <Route path='/women' element={<Home />}></Route>
             <Route path='/men' element={<Home />}></Route>
             <Route path='/kids' element={<Home />}></Route>
             <Route path='/shoes' element={<Home />}></Route>
@@ -17,7 +18,7 @@ export default function AllRoutes() {
             <Route path='/bed&bath' element={<Home />}></Route>
             <Route path="/Conn'sxBelk" element={<Home />}></Route>
             <Route path='/brands' element={<Home />}></Route>
-            <Route path='/clearence' element={<Home />}></Route>
+            <Route path='/clearence' element={<Home />}></Route> */}
         </Routes>
     )
 }

@@ -5,9 +5,22 @@ import { CiBadgeDollar } from "react-icons/ci";
 import { VscAccount } from "react-icons/vsc";
 import { IoBagOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+const Navbar = () => {
+    const [giftState, setGiftState] = useState(false)
+    const [womenState, setWomenState] = useState(false)
+    const [MenState, setMenState] = useState(false)
+    const [kidsState, setKidsState] = useState(false)
+    const [shoesState, setShoesState] = useState(false)
+    const [handbagsState, setHandbagsState] = useState(false)
+    const [jewelryState, setJewelryState] = useState(false)
+    const [beutyState, setBeutyState] = useState(false)
+    const [homeState, setHomeState] = useState(false)
+    const [bedState, setBedState] = useState(false)
+    const [connsState, setConnsState] = useState(false)
+    const [brandsState, setBrandsState] = useState(false)
+    const [clearenceState, setClearenceState] = useState(false)
 
-const Navbar = (setGiftState) => {
-   
     return (
         <Container >
             {<Box fontFamily="font-family: Roboto,Arial,sans-serif" fontSize="15px" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" paddingBottom="3px" textColor="#020202">
@@ -32,11 +45,11 @@ const Navbar = (setGiftState) => {
                 </Box>
 
                 <HStack margin="15px" marginLeft="10%" justifyContent="space-between" width="55%" position="relative" >
-                    <Link to="/gifts" onMouseEnter={() => setGiftState.setGiftState(true)} onMouseLeave={() => setGiftState.setGiftState(false)} transition="1s">
+                    <Link to="/gifts" onMouseEnter={() => setGiftState(true)} onMouseLeave={() => setGiftState(false)} transition="1s">
                         Gifts
                     </Link>
                     {
-                        setGiftState.giftState ? <Box onMouseEnter={() => setGiftState.setGiftState(true)} onMouseLeave={() => setGiftState.setGiftState(false)} position="absolute" top="110%" width="160%" left="-5%" paddingTop="2%">
+                        giftState ? <Box onMouseEnter={() => setGiftState(true)} onMouseLeave={() => setGiftState(false)} position="absolute" top="110%" width="170%" left="-4%" paddingTop="2%" backgroundColor="white">
                             <Box width="90%" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" paddingTop="30px">
                                 <SimpleGrid columns="4" gap="20px" >
                                     <Box backgroundColor="#f5f5f5" textAlign="left" paddingLeft="15px" marginLeft="15px" >
@@ -139,11 +152,11 @@ const Navbar = (setGiftState) => {
 
                         </Box> : null
                     }
-                    <Link to="/women" onMouseEnter={() => setGiftState.setWomenState(true)} onMouseLeave={() => setGiftState.setWomenState(false)} transition="1s">
+                    <Link to="/women" onMouseEnter={() => setWomenState(true)} onMouseLeave={() => setWomenState(false)} transition="1s">
                         Women
                     </Link>
                     {
-                        setGiftState.womenState ? <Box onMouseEnter={() => setGiftState.setWomenState(true)} onMouseLeave={() => setGiftState.setWomenState(false)} position="absolute" top="110%" width="160%" left="-5%" paddingTop="2%">
+                        womenState ? <Box onMouseEnter={() => setWomenState(true)} onMouseLeave={() => setWomenState(false)} position="absolute" top="110%" width="170%" left="-4%" paddingTop="2%" backgroundColor="white">
                             <Box width="90%" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" paddingTop="30px">
                                 <SimpleGrid columns="4" gap="20px" >
                                     <Box backgroundColor="#f5f5f5" textAlign="left" paddingLeft="15px" marginLeft="15px" >
@@ -246,11 +259,11 @@ const Navbar = (setGiftState) => {
 
                         </Box> : null
                     }
-                    <Link to="/men" onMouseEnter={() => setGiftState.setMenState(true)} onMouseLeave={() => setGiftState.setMenState(false)} transition="1s">
+                    <Link to="/men" onMouseEnter={() => setMenState(true)} onMouseLeave={() => setMenState(false)} transition="1s">
                         Men
                     </Link>
                     {
-                        setGiftState.MenState ? <Box onMouseEnter={() => setGiftState.setMenState(true)} onMouseLeave={() => setGiftState.setMenState(false)} position="absolute" top="110%" width="160%" left="-5%" paddingTop="2%">
+                        MenState ? <Box onMouseEnter={() => setMenState(true)} onMouseLeave={() => setMenState(false)} position="absolute" top="110%" width="170%" left="-4%" paddingTop="2%" backgroundColor="white">
                             <Box width="90%" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" paddingTop="30px">
                                 <SimpleGrid columns="4" gap="20px" >
                                     <Box backgroundColor="#f5f5f5" textAlign="left" paddingLeft="15px" marginLeft="15px" >
@@ -353,11 +366,11 @@ const Navbar = (setGiftState) => {
 
                         </Box> : null
                     }
-                    <Link to="/kids" onMouseEnter={() => setGiftState.setKidsState(true)} onMouseLeave={() => setGiftState.setKidsState(false)} transition="1s">
+                    <Link to="/kids" onMouseEnter={() => setKidsState(true)} onMouseLeave={() => setKidsState(false)} transition="1s">
                         Kids
                     </Link>
                     {
-                        setGiftState.kidsState ? <Box onMouseEnter={() => setGiftState.setKidsState(true)} onMouseLeave={() => setGiftState.setKidsState(false)} position="absolute" top="110%" width="160%" left="-5%" paddingTop="2%">
+                        kidsState ? <Box onMouseEnter={() => setKidsState(true)} onMouseLeave={() => setKidsState(false)} position="absolute" top="110%" width="170%" left="-4%" paddingTop="2%" backgroundColor="white">
                             <Box width="90%" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" paddingTop="30px">
                                 <SimpleGrid columns="4" gap="20px" >
                                     <Box backgroundColor="#f5f5f5" textAlign="left" paddingLeft="15px" marginLeft="15px" >
@@ -460,11 +473,11 @@ const Navbar = (setGiftState) => {
 
                         </Box> : null
                     }
-                    <Link to="/shoes" onMouseEnter={() => setGiftState.setShoesState(true)} onMouseLeave={() => setGiftState.setShoesState(false)} transition="1s">
+                    <Link to="/shoes" onMouseEnter={() => setShoesState(true)} onMouseLeave={() => setShoesState(false)} transition="1s">
                         Shoes
                     </Link>
                     {
-                        setGiftState.shoesState ? <Box onMouseEnter={() => setGiftState.setShoesState(true)} onMouseLeave={() => setGiftState.setShoesState(false)} position="absolute" top="110%" width="160%" left="-5%" paddingTop="2%">
+                        shoesState ? <Box onMouseEnter={() => setShoesState(true)} onMouseLeave={() => setShoesState(false)} position="absolute" top="110%" width="170%" left="-4%" paddingTop="2%" backgroundColor="white">
                             <Box width="90%" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" paddingTop="30px">
                                 <SimpleGrid columns="4" gap="20px" >
                                     <Box backgroundColor="#f5f5f5" textAlign="left" paddingLeft="15px" marginLeft="15px" >
@@ -567,11 +580,11 @@ const Navbar = (setGiftState) => {
 
                         </Box> : null
                     }
-                    <Link to="/handbags" onMouseEnter={() => setGiftState.setHandbagsState(true)} onMouseLeave={() => setGiftState.setHandbagsState(false)} transition="1s">
+                    <Link to="/handbags" onMouseEnter={() => setHandbagsState(true)} onMouseLeave={() => setHandbagsState(false)} transition="1s">
                         Handbags
                     </Link>
                     {
-                        setGiftState.handbagsState ? <Box onMouseEnter={() => setGiftState.setHandbagsState(true)} onMouseLeave={() => setGiftState.setHandbagsState(false)} position="absolute" top="110%" width="160%" left="-5%" paddingTop="2%">
+                        handbagsState ? <Box onMouseEnter={() => setHandbagsState(true)} onMouseLeave={() => setHandbagsState(false)} position="absolute" top="110%" width="170%" left="-4%" paddingTop="2%" backgroundColor="white">
                             <Box width="90%" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" paddingTop="30px">
                                 <SimpleGrid columns="4" gap="20px" >
                                     <Box backgroundColor="#f5f5f5" textAlign="left" paddingLeft="15px" marginLeft="15px" >
@@ -674,11 +687,11 @@ const Navbar = (setGiftState) => {
 
                         </Box> : null
                     }
-                    <Link to="/jewelry" onMouseEnter={() => setGiftState.setJewelryState(true)} onMouseLeave={() => setGiftState.setJewelryState(false)} transition="1s">
+                    <Link to="/jewelry" onMouseEnter={() => setJewelryState(true)} onMouseLeave={() => setJewelryState(false)} transition="1s">
                         Jewelry
                     </Link>
                     {
-                        setGiftState.jewelryState ? <Box onMouseEnter={() => setGiftState.setJewelryState(true)} onMouseLeave={() => setGiftState.setJewelryState(false)} position="absolute" top="110%" width="160%" left="-5%" paddingTop="2%">
+                        jewelryState ? <Box onMouseEnter={() => setJewelryState(true)} onMouseLeave={() => setJewelryState(false)} position="absolute" top="110%" width="170%" left="-4%" paddingTop="2%" backgroundColor="white">
                             <Box width="90%" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" paddingTop="30px">
                                 <SimpleGrid columns="4" gap="20px" >
                                     <Box backgroundColor="#f5f5f5" textAlign="left" paddingLeft="15px" marginLeft="15px" >
@@ -781,11 +794,11 @@ const Navbar = (setGiftState) => {
 
                         </Box> : null
                     }
-                    <Link to="/beuty" onMouseEnter={() => setGiftState.setBeutyState(true)} onMouseLeave={() => setGiftState.setBeutyState(false)} transition="1s">
+                    <Link to="/beuty" onMouseEnter={() => setBeutyState(true)} onMouseLeave={() => setBeutyState(false)} transition="1s">
                         Beuty
                     </Link>
                     {
-                        setGiftState.beutyState ? <Box onMouseEnter={() => setGiftState.setBeutyState(true)} onMouseLeave={() => setGiftState.setBeutyState(false)} position="absolute" top="110%" width="160%" left="-5%" paddingTop="2%">
+                        beutyState ? <Box onMouseEnter={() => setBeutyState(true)} onMouseLeave={() => setBeutyState(false)} position="absolute" top="110%" width="170%" left="-4%" paddingTop="2%" backgroundColor="white">
                             <Box width="90%" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" paddingTop="30px">
                                 <SimpleGrid columns="4" gap="20px" >
                                     <Box backgroundColor="#f5f5f5" textAlign="left" paddingLeft="15px" marginLeft="15px" >
@@ -888,11 +901,11 @@ const Navbar = (setGiftState) => {
 
                         </Box> : null
                     }
-                    <Link to="/home" onMouseEnter={() => setGiftState.setHomeState(true)} onMouseLeave={() => setGiftState.setHomeState(false)} transition="1s">
+                    <Link to="/home" onMouseEnter={() => setHomeState(true)} onMouseLeave={() => setHomeState(false)} transition="1s">
                         Home
                     </Link>
                     {
-                        setGiftState.homeState ? <Box onMouseEnter={() => setGiftState.setHomeState(true)} onMouseLeave={() => setGiftState.setHomeState(false)} position="absolute" top="110%" width="160%" left="-5%" paddingTop="2%">
+                        homeState ? <Box onMouseEnter={() => setHomeState(true)} onMouseLeave={() => setHomeState(false)} position="absolute" top="110%" width="170%" left="-4%" paddingTop="2%" backgroundColor="white">
                             <Box width="90%" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" paddingTop="30px">
                                 <SimpleGrid columns="4" gap="20px" >
                                     <Box backgroundColor="#f5f5f5" textAlign="left" paddingLeft="15px" marginLeft="15px" >
@@ -995,11 +1008,11 @@ const Navbar = (setGiftState) => {
 
                         </Box> : null
                     }
-                    <Link to="/bed&bath" onMouseEnter={() => setGiftState.setBedState(true)} onMouseLeave={() => setGiftState.setBedState(false)} transition="1s">
+                    <Link to="/bed&bath" onMouseEnter={() => setBedState(true)} onMouseLeave={() => setBedState(false)} transition="1s">
                         Bed & Bath
                     </Link>
                     {
-                        setGiftState.bedState ? <Box onMouseEnter={() => setGiftState.setBedState(true)} onMouseLeave={() => setGiftState.setBedState(false)} position="absolute" top="110%" width="160%" left="-5%" paddingTop="2%">
+                        bedState ? <Box onMouseEnter={() => setBedState(true)} onMouseLeave={() => setBedState(false)} position="absolute" top="110%" width="170%" left="-4%" paddingTop="2%" backgroundColor="white">
                             <Box width="90%" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" paddingTop="30px">
                                 <SimpleGrid columns="4" gap="20px" >
                                     <Box backgroundColor="#f5f5f5" textAlign="left" paddingLeft="15px" marginLeft="15px" >
@@ -1102,11 +1115,11 @@ const Navbar = (setGiftState) => {
 
                         </Box> : null
                     }
-                    <Link to="/Conn'sxBelk" onMouseEnter={() => setGiftState.setConnsState(true)} onMouseLeave={() => setGiftState.setConnsState(false)} transition="1s">
+                    <Link to="/Conn'sxBelk" onMouseEnter={() => setConnsState(true)} onMouseLeave={() => setConnsState(false)} transition="1s">
                         Conn's x Belk
                     </Link>
                     {
-                        setGiftState.connsState ? <Box onMouseEnter={() => setGiftState.setConnsState(true)} onMouseLeave={() => setGiftState.setConnsState(false)} position="absolute" top="110%" width="160%" left="-5%" paddingTop="2%">
+                        connsState ? <Box onMouseEnter={() => setConnsState(true)} onMouseLeave={() => setConnsState(false)} position="absolute" top="110%" width="170%" left="-4%" paddingTop="2%" backgroundColor="white">
                             <Box width="90%" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" paddingTop="30px">
                                 <SimpleGrid columns="4" gap="20px" >
                                     <Box backgroundColor="#f5f5f5" textAlign="left" paddingLeft="15px" marginLeft="15px" >
@@ -1209,11 +1222,11 @@ const Navbar = (setGiftState) => {
 
                         </Box> : null
                     }
-                    <Link to="/brands" onMouseEnter={() => setGiftState.setBrandsState(true)} onMouseLeave={() => setGiftState.setBrandsState(false)} transition="1s">
+                    <Link to="/brands" onMouseEnter={() => setBrandsState(true)} onMouseLeave={() => setBrandsState(false)} transition="1s">
                         Brands
                     </Link>
                     {
-                        setGiftState.brandsState ? <Box onMouseEnter={() => setGiftState.setBrandsState(true)} onMouseLeave={() => setGiftState.setBrandsState(false)} position="absolute" top="110%" width="160%" left="-5%" paddingTop="2%">
+                        brandsState ? <Box onMouseEnter={() => setBrandsState(true)} onMouseLeave={() => setBrandsState(false)} position="absolute" top="110%" width="170%" left="-4%" paddingTop="2%" backgroundColor="white">
                             <Box width="90%" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" paddingTop="30px">
                                 <SimpleGrid columns="4" gap="20px" >
                                     <Box backgroundColor="#f5f5f5" textAlign="left" paddingLeft="15px" marginLeft="15px" >
@@ -1316,11 +1329,11 @@ const Navbar = (setGiftState) => {
 
                         </Box> : null
                     }
-                    <Link to="/clearence" onMouseEnter={() => setGiftState.setClearenceState(true)} onMouseLeave={() => setGiftState.setClearenceState(false)} transition="1s" >
+                    <Link to="/clearence" onMouseEnter={() => setClearenceState(true)} onMouseLeave={() => setClearenceState(false)} transition="1s" >
                         <Text color="red">Clearance</Text>
                     </Link>
                     {
-                        setGiftState.clearenceState ? <Box onMouseEnter={() => setGiftState.setClearenceState(true)} onMouseLeave={() => setGiftState.setClearenceState(false)} position="absolute" top="110%" width="160%" left="-5%" paddingTop="2%">
+                        clearenceState ? <Box onMouseEnter={() => setClearenceState(true)} onMouseLeave={() => setClearenceState(false)} position="absolute" top="110%" width="170%" left="-4%" paddingTop="2%" backgroundColor="white">
                             <Box width="90%" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" paddingTop="30px">
                                 <SimpleGrid columns="4" gap="20px" >
                                     <Box backgroundColor="#f5f5f5" textAlign="left" paddingLeft="15px" marginLeft="15px" >
@@ -1427,7 +1440,10 @@ const Navbar = (setGiftState) => {
                 </HStack>
 
             </Box>}
-
+            {/* {giftState || womenState || MenState || kidsState || shoesState || handbagsState || jewelryState || beutyState || homeState || bedState || connsState || brandsState || clearenceState ? null : <Box>
+                
+                <Footer/>
+            </Box>} */}
 
         </Container>
     )
